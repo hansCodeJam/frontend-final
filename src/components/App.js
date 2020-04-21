@@ -16,8 +16,8 @@ class Home extends Component {
   getSongs = () => {
     const url = '/songs';
     axios.get(url).then((song) => {
-      console.log('song', song)
-      console.log('songs data, ', song.data)
+      // console.log('song', song)
+      // console.log('songs data, ', song.data)
       return this.setState( {songs: song.data})
     })
   }

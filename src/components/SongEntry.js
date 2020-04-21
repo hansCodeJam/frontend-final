@@ -1,16 +1,15 @@
 import React from 'react';
 
 
-const BlogItem = ({onDelete, onUpdate, blog: {title, author, subject, article, _id:id}}) => {
+const SongEntry = ({onDelete, onUpdate, blog: {title, artist, genre, lyrics, _id:id}}) => {
     return(
             <div className="ui card" style={{ width: '75%', padding: '20px' }}>
                     <div className="content">
                       <div className="header">{title}</div>
                       <br />
-                      <div className="meta">Author: {author}</div>
-                      <div className="meta">Subject: {subject}</div>
-                      <hr />
-                      <div className="description"> {article} </div>
+                      <div className="meta">Artist: {artist}</div>
+                      <div className="meta">Genre: {genre}</div>
+                      <div className="meta">Lyrics: {lyrics}</div>
                       <Button className="ui primary button" style={{margin: '10px 15px'}} onClick={() => {
                             return onDelete(id)
                         }}>
@@ -28,4 +27,4 @@ const BlogItem = ({onDelete, onUpdate, blog: {title, author, subject, article, _
     )
 }
 
-export default BlogItem
+export default SongEntry
