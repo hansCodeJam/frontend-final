@@ -14,7 +14,7 @@ class Home extends Component {
   }
 
   getSongs = () => {
-    const url = '/journals';
+    const url = '/songs';
     axios.get(url).then((song) => {
       console.log('song', song)
       console.log('songs data, ', song.data)
@@ -22,7 +22,7 @@ class Home extends Component {
     })
   }
 
-  handleNewJournalSubmit = (event, song) => {
+  handleNewSongSubmit = (event, song) => {
     event.preventDefault();
     let axiosConfig = {
       headers:{
@@ -47,8 +47,8 @@ class Home extends Component {
  
   render(){
     return (
-      <div>
-        <h1>music app</h1>
+      <div className="section" style={{border: '1px blue solid'}}>
+        
       </div>
       
     );
