@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from './Button';
 
 
 const SongEntry = ({onDelete, onUpdate, blog: {title, artist, genre, lyrics, _id:id}}) => {
