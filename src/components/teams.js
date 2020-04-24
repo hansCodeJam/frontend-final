@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import { Fade } from 'react-reveal';
 
-import '../styles/teams.css'
+import '../styles/Teams.css'
 
 class Teams extends Component {
   constructor(props){
@@ -11,20 +11,20 @@ class Teams extends Component {
     this.state = {
       searchInput: "",
       teams: [
-        "sixers", "blazers", "bucks", "bulls", "cavaliers",
-        "celtics", "clippers", "grizzlies", "hawks", "heat",
-        "hornets", "jazz", "kings", "knicks", "lakers",
-        "magic", "mavericks", "nets", "nuggets", "pacers",
-        "pelicans", "pistons", "raptors", "rockets", "spurs",
-        "suns", "thunder", "timberwolves", "warriors", "wizards"
+        "Sixers", "Blazers", "Bucks", "Bulls", "Cavaliers",
+        "Celtics", "Clippers", "Grizzlies", "Hawks", "Heat",
+        "Hornets", "Jazz", "Kings", "Knicks", "Lakers",
+        "Magic", "Mavericks", "Nets", "Nuggets", "Pacers",
+        "Pelicans", "Pistons", "Raptors", "Rockets", "Spurs",
+        "Suns", "Thunder", "Timberwolves", "Warriors", "Wizards"
        ],
        searchResults: [
-        "sixers", "blazers", "bucks", "bulls", "cavaliers",
-        "celtics", "clippers", "grizzlies", "hawks", "heat",
-        "hornets", "jazz", "kings", "knicks", "lakers",
-        "magic", "mavericks", "nets", "nuggets", "pacers",
-        "pelicans", "pistons", "raptors", "rockets", "spurs",
-        "suns", "thunder", "timberwolves", "warriors", "wizards"
+        "Sixers", "Blazers", "Bucks", "Bulls", "Cavaliers",
+        "Celtics", "Clippers", "Grizzlies", "Hawks", "Heat",
+        "Hornets", "Jazz", "Kings", "Knicks", "Lakers",
+        "Magic", "Mavericks", "Nets", "Nuggets", "Pacers",
+        "Pelicans", "Pistons", "Raptors", "Rockets", "Spurs",
+        "Suns", "Thunder", "Timberwolves", "Warriors", "Wizards"
        ]
     }
 
@@ -34,7 +34,6 @@ class Teams extends Component {
 
   handleInputChange(event){
     this.setState({searchInput: event.target.value});
-
     this.filterTeams(event.target.value)
   }
 
@@ -51,8 +50,8 @@ class Teams extends Component {
       return (
         <Fade key={index}>
           <Link to={`/${team}/roster`}>
-            <div className="team hvr-underline-from-center hvr-grow-shadow">
-              <img src={`/images/teams/${team}.png`} alt={team} />
+            <div className="team">
+              <img src={`/images/teams/${team}.png`} />
             </div>
           </Link>
         </Fade>
