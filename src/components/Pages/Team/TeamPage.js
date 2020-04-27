@@ -4,7 +4,7 @@ import TeamSearch from "./TeamSearch";
 const TeamPage =()=>(
 <div>
     <h1>Team search</h1>
- <TeamSearch /> 
+    <TeamSearch /> 
 </div>
 );
 

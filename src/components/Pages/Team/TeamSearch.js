@@ -7,156 +7,156 @@ const TeamSearch= ()=> (
         when res returns, send another req to retrieve each player stat.*/ }
 
         <TeamCard
-            TeamImg={"images/teams/hawks.png"}
+            TeamImg={"images/hawks.png"}
             TeamName="Atlanta Hawks"
         />
 
         <TeamCard
-            TeamImg={"images/teams/celtics.png"}
+            TeamImg={"images/celtics.png"}
             TeamName="Boston Celtics"
         />
 
         <TeamCard
-            TeamImg={"images/teams/nets.png"}
+            TeamImg={"images/nets.png"}
             TeamName="Brooklyn Nets"
         />
 
         <TeamCard
-            TeamImg={"images/teams/hornets.png"}
+            TeamImg={"images/hornets.png"}
             TeamName="Charlotte Hornets"
         />
 
         <TeamCard
-            TeamImg={"images/teams/bulls.png"}
+            TeamImg={"images/bulls.png"}
             TeamName="Chicago Bulls"
         />
 
         <TeamCard
-            TeamImg={"images/teams/cavaliers.png"}
+            TeamImg={"images/cavaliers.png"}
             TeamName="Cleveland Cavaliers"
         />
 
         <TeamCard
-            TeamImg={"images/teams/mavericks.png"}
+            TeamImg={"images/mavericks.png"}
             TeamName="Dallas Mavericks"
         />
 
         <TeamCard
-            TeamImg={"images/teams/nuggets.png"}
+            TeamImg={"images/nuggets.png"}
             TeamName="Denver Nuggets"
         />
 
         <TeamCard
-            TeamImg={"images/teams/pistons.png"}
+            TeamImg={"images/pistons.png"}
             TeamName="Detroit Pistons"
         />
 
         <TeamCard
-            TeamImg={"images/teams/warriors.png"}
+            TeamImg={"images/warriors.png"}
             TeamName="Golden State Warriors"
         />
 
         <TeamCard
-            TeamImg={"images/teams/rockets.png"}
+            TeamImg={"images/rockets.png"}
             TeamName="Houston Rockets"
         />
 
         {/* <TeamCard
-            TeamImg={"images/teams/r.png"}
+            TeamImg={"images/r.png"}
             TeamName="Houston Rockets"
         /> */}
 
         <TeamCard
-            TeamImg={"images/teams/pacers.png"}
+            TeamImg={"images/pacers.png"}
             TeamName="Indiana Pacers"
         />
 
         <TeamCard
-            TeamImg={"images/teams/clippers.png"}
+            TeamImg={"images/clippers.png"}
             TeamName="Los Angeles Clippers"
         />
 
         <TeamCard
-            TeamImg={"images/teams/lakers.png"}
+            TeamImg={"images/lakers.png"}
             TeamName="Los Angeles Lakers"
         />
         <TeamCard
-            TeamImg={"images/teams/grizzlies.png"}
+            TeamImg={"images/grizzlies.png"}
             TeamName="Memphis Grizzlies"
         />
 
         <TeamCard
-            TeamImg={"images/teams/heat.png"}
+            TeamImg={"/images/heat.png"}
             TeamName="Miami Heat"
         />
 
         <TeamCard
-            TeamImg={"images/teams/bucks.png"}
+            TeamImg={"images/bucks.png"}
             TeamName="Milwaukee Bucks"
         />
 
         <TeamCard
-            TeamImg={"images/teams/timberwolves.png"}
+            TeamImg={"images/timberwolves.png"}
             TeamName="Minnesota Timberwolves"
         />
 
         <TeamCard
-            TeamImg={"images/teams/pelicans.png"}
+            TeamImg={"images/pelicans.png"}
             TeamName="New Orleans Pelicans"
         />
 
         <TeamCard
-            TeamImg={"images/teams/knicks.png"}
+            TeamImg={"images/knicks.png"}
             TeamName="New York Knicks"
         />
 
         <TeamCard
-            TeamImg={"images/teams/thunder.png"}
+            TeamImg={"images/thunder.png"}
             TeamName="Oklahoma City Thunder"
         />
 
         <TeamCard
-            TeamImg={"images/teams/magic.png"}
+            TeamImg={"images/magic.png"}
             TeamName="Orlando Magic"
         />
 
         <TeamCard
-            TeamImg={"images/teams/sixers.png"}
+            TeamImg={"images/sixers.png"}
             TeamName="Philadelpia 76ers"
         />
 
         <TeamCard
-            TeamImg={"images/teams/suns.png"}
+            TeamImg={"images/suns.png"}
             TeamName="Phoenix Suns"
         />
 
         <TeamCard
-            TeamImg={"images/teams/trailblazers.png"}
+            TeamImg={"images/blazers.png"}
             TeamName="Portland Trailblazers"
         />
 
         <TeamCard
-            TeamImg={"images/teams/kings.png"}
+            TeamImg={"images/kings.png"}
             TeamName="Sacramento Kings"
         />
 
         <TeamCard
-            TeamImg={"images/teams/spurs.png"}
+            TeamImg={"images/spurs.png"}
             TeamName="San Antonio Spurs"
         />
 
         <TeamCard
-            TeamImg={"images/teams/raptors.png"}
+            TeamImg={"images/raptors.png"}
             TeamName="Toronto Raptors"
         />
 
         <TeamCard
-            TeamImg={"images/teams/jazz.png"}
+            TeamImg={"images/jazz.png"}
             TeamName="Utah Jazz"
         />
 
         <TeamCard
-            TeamImg={"images/teams/wizards.png"}
+            TeamImg={"images/wizards.png"}
             TeamName="Washington Wizards"
         />
 
