@@ -7,8 +7,8 @@ const Stats = props => (
         <h2>{props.playerTeam}</h2>
         {props.playerInfo.ast ? (
             <div>
+                <img src={`images/${props.playerTeamLogo}.png`} width="100px"/><br />
                 <img src={`https://nba-players.herokuapp.com/players/${props.playerLastName}/${props.playerFirstName}` }/>
-                <img src={`images/${props.playerTeamLogo}.png`} />
                 {/* <img src={`https://nba-players.herokuapp.com/players/Harden/James`}/> */}
                 {/* <img src={`/images/Lakers.png`} /> */}
 

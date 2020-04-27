@@ -10,7 +10,7 @@ const TeamSearch= ()=> (
             TeamImg={"images/hawks.png"}
             TeamName="Atlanta Hawks"
         />
-
+        
         <TeamCard
             TeamImg={"images/celtics.png"}
             TeamName="Boston Celtics"
@@ -60,11 +60,6 @@ const TeamSearch= ()=> (
             TeamImg={"images/rockets.png"}
             TeamName="Houston Rockets"
         />
-
-        {/* <TeamCard
-            TeamImg={"images/r.png"}
-            TeamName="Houston Rockets"
-        /> */}
 
         <TeamCard
             TeamImg={"images/pacers.png"}

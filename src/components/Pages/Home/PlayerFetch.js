@@ -23,7 +23,7 @@ class PlayerFetch extends Component {
 
     handleSubmit = event => {
         event.preventDefault();
-        console.log(this.state.search)
+        // console.log(this.state.search)
 
         let id = this.state.search;
 
@@ -43,10 +43,10 @@ class PlayerFetch extends Component {
                                 playerLastName: data.data.data[0].last_name, 
                                 playerTeamLogo: data.data.data[0].team.name}, () => {
 
-                    console.log(this.state.playerName)
-                    console.log(this.state.playerFirstName + 'first');
-                    console.log(this.state.playerLastName + 'last');
-                    console.log(this.state.playerTeamLogo + "team logo");
+                    // console.log(this.state.playerName)
+                    // console.log(this.state.playerFirstName + 'first');
+                    // console.log(this.state.playerLastName + 'last');
+                    // console.log(this.state.playerTeamLogo + "team logo");
 
                     let apiUrl2 = " https://www.balldontlie.io/api/v1/season_averages?season=2018&player_ids[]=" + playerId;
 
@@ -78,6 +78,9 @@ class PlayerFetch extends Component {
                     playerName={this.state.playerName}
                     playerTeam={this.state.playerTeam}
                     playerInfo={this.state.playerInfo}
+                    playerFirstName={this.state.playerFirstName}
+                    playerLastName={this.state.playerLastName}
+                    playerTeamLogo={this.state.playerTeamLogo}
                 />
             </div>
         );
