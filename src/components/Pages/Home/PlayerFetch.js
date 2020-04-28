@@ -3,14 +3,18 @@ import axios from "axios";
 import Stats from "../Response/Stats";
 
 class PlayerFetch extends Component {
-    state = {
-        search: "",
-        playerInfo: {},
-        playerName: "",
-        playerTeam: "",
-        playerFirstName: "",
-        playerLastName: "",
-        playerTeamLogo: ""
+    constructor(){
+        super()
+        this.state = {
+            search: "",
+            playerInfo: {},
+            playerName: "",
+            playerTeam: "",
+            playerFirstName: "",
+            playerLastName: "",
+            playerTeamLogo: ""
+
+    }
     };
 
     handleChange = event => {
@@ -23,17 +27,17 @@ class PlayerFetch extends Component {
 
     handleSubmit = event => {
         event.preventDefault();
-        // console.log(this.state.search)
+        console.log(this.state.search, 'search')
 
-        let id = this.state.search;
+        let playerInput = this.state.search;
 
-        let apiUrl = " https://www.balldontlie.io/api/v1/players?search=" + id;
+        let apiUrl = " https://www.balldontlie.io/api/v1/players?search=" + playerInput;
 
         axios.get(apiUrl).then(
             data => {
-                // console.log(data)
-                // console.log(data.data.data[0].id);
-                // console.log(data.data.data[0].team.full_name);
+                // console.log(data, 'data')
+                // console.log(data.data.data[0].id, 'id');
+                // console.log(data.data.data[0].team.full_name, 'fullname');
 
                 let playerId = data.data.data[0].id;
 
@@ -43,12 +47,12 @@ class PlayerFetch extends Component {
                                 playerLastName: data.data.data[0].last_name, 
                                 playerTeamLogo: data.data.data[0].team.name}, () => {
 
-                    // console.log(this.state.playerName)
-                    // console.log(this.state.playerFirstName + 'first');
-                    // console.log(this.state.playerLastName + 'last');
-                    // console.log(this.state.playerTeamLogo + "team logo");
+                    // console.log(this.state.playerName, 'name')
+                    // console.log(this.state.playerFirstName, 'first');
+                    // console.log(this.state.playerLastName, 'last');
+                    // console.log(this.state.playerTeamLogo, "team logo");
 
-                    let apiUrl2 = " https://www.balldontlie.io/api/v1/season_averages?season=2018&player_ids[]=" + playerId;
+                    let apiUrl2 = " https://www.balldontlie.io/api/v1/season_averages?season=2019&player_ids[]=" + playerId;
 
                     axios.get(apiUrl2).then(
                         data => {
